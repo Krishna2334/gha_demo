@@ -1,11 +1,11 @@
-name: Github Action
+name: Github Action Demo
 on: push
 jobs: 
- Action_demo:
+ action_demo:
    runs-on: ubuntu-latest
    steps:
      - name: Checkout the code
-       uses: action/checkout@v4
+       uses: actions/checkout@v4
      - name: Printing Index.html
        run: cat index.html
 
