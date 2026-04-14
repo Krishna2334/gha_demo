@@ -1,17 +1,16 @@
 name: Input demo
 on:
-   workflow_dispatch:
+  workflow_dispatch:
      inputs:
        environment:
-         description: Choose environment variable
-         required: true
-         default: dev
-         options:
+        description: Choose environment variable
+        required: true
+        default: dev
+        options:
            - dev
            - test
-           - prod 
-           
-    artifact_tag:
+           - prod
+       artifact_tag:
           description: Choose the git tag
           required: true
 jobs:
