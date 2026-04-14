@@ -9,10 +9,11 @@ on:
          options:
            - dev
            - test
-           - prod
-      artifact_tag:
-         description: Choose the git tag
-         required: true
+           - prod 
+           
+    artifact_tag:
+          description: Choose the git tag
+          required: true
 jobs:
   input_demo:
     runs-on: ubuntu-latest
